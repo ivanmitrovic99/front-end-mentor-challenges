@@ -1,0 +1,1 @@
+Challenge 2: https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI
