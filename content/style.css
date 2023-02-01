@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body { 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3eae3;
+    font-family: 'Fraunces';
+    font-weight: 700;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.product-holder {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 80%;
+}
+.product-image {
+    display: flex;
+    flex: 1;
+    background-image: url('images/image-product-desktop.jpg');
+    background-size: cover;
+    border-radius: 10px;
+}
+.product-description {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 7% 5% 7%;
+}
+h1, h2, p, .price {
+    padding-bottom: 15px;
+}
+h1, p {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+h1 {
+    font-size: 1em;
+    letter-spacing: 5px;
+}
+h2 {
+    width: 80%;
+    font-size: 2.3em;
+}
+p {
+    width: 90%;
+    font-weight: 500;
+}
+.price {
+    display: flex;
+    width: 70%;
+    font-size: 2em;
+    color: hsl(158, 36%, 37%);
+}
+.price-crossed {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 0.4em;
+    color: hsl(228, 12%, 48%);
+    margin: 0 0 3px 25px;
+}
+.button {
+    cursor: pointer;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    padding: 15px 0;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button:hover, .button:focus {
+    background-color: #1a4031;
+}
+
+.button img {
+    margin-right: 8px;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 0.8em;
+    }
+    h2 {
+        width: 90%;
+        font-size: 1.7em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    .product-holder {
+    flex-direction: column;
+    height: fit-content;
+    }
+    .product-image {
+        background-image: url('images/image-product-mobile.jpg');
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        min-height: 250px;
+    }
+    .button {
+        width: 100%;
+    }
+    
+}
