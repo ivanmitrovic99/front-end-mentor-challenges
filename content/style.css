@@ -40,18 +40,23 @@ body {
     width: 100%;
     border-radius: 4%;
 } 
-
-.component-image img:hover {
+.view-icon:hover {
+    cursor: pointer;
+}
+.component-image img:hover:not(.view-icon img), .view-icon:hover + img {
     cursor: pointer;
     opacity: 0.5;
 } 
+.component-image:hover .view-icon {
+    display: flex;
+}
 .view-icon {
     position: absolute;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
-    z-index: -1;
     height: 100%;
+    z-index: 2;
 }
 .view-icon img {
     height: 50px;
@@ -168,4 +173,9 @@ p {
         height: 18px;
     }
     
+}
+@media (hover: hover) {
+    button:hover {
+      border: 3px solid green; /* solves sticky problem */
+    }
 }
