@@ -73,7 +73,7 @@ h1 {
     color: #fff;
     font-weight: 600;
 }
-h1:hover {
+h1:hover, .white-text:hover {
     color: hsl(178, 100%, 50%);
     cursor: pointer;
 }
@@ -173,9 +173,4 @@ p {
         height: 18px;
     }
     
-}
-@media (hover: hover) {
-    button:hover {
-      border: 3px solid green; /* solves sticky problem */
-    }
 }
