@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 95%);
+}
+.component {
+    display: flex;
+    margin: 20px 0;
+    width: 45%;
+    height: 40%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.holder img {
+    width: 50px;
+    margin-bottom: 30px;
+}
+.holder {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 90%;
+    padding: 6%;
+}
+.holder-1 {
+    background-color: hsl(31, 77%, 52%);
+}
+.holder-1 .button {
+    color: hsl(31, 77%, 52%);
+}
+.holder-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+.holder-2 .button {
+    color: hsl(184, 100%, 22%);
+}
+.holder-3 {
+    background-color: hsl(179, 100%, 13%);
+}
+.holder-3 .button {
+    color: hsl(179, 100%, 13%);
+}
+.holder h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 30px;
+}
+.button-holder {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    align-items: flex-end;
+}
+.button {
+    color: transparent;
+    padding: 10px;
+    width: 80%;
+    background-color: hsl(0, 0%, 95%);
+    text-decoration: none;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    text-align: center;
+}
+.button:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);;
+}
+@media (max-width: 1950px) {
+    .component {
+        width: 60%;
+    }
+}
+@media (max-width: 1500px) {
+    .component {
+        height: 60%;
+    }
+}
+@media (max-width: 1300px) {
+    .component {
+        width: 80%;
+    }
+}
+@media (max-width: 991px) {
+    .component {
+        width: 90%;
+    }
+    html, body {
+        height: auto;
+    }
+}
+@media (max-width: 767px){
+    .component {
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8%;
+    }
+    .holder {
+        min-height: 400px;
+    }
+    .button {
+        width: 65%;
+        margin-bottom: 20px;
+    }
+}
