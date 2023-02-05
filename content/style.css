@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
+html {
+    height: 100%;
+    max-width: 100%;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,32 +11,51 @@
     font-family: 'Kumbh Sans', sans-serif;
     color: hsl(229, 23%, 23%);
 }
-
-html {
-    height: 100%;
-    width: 100%;
+html::before {
+    content: " ";
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+    background-image: url('images/bg-pattern-bottom.svg');
+    background-size: cover;
+    z-index: 0;
+}
+html::after {
+    content: " ";
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background-image: url('images/bg-pattern-top.svg');
+    background-size: cover;
+    z-index: 0;
+    transform: rotate(180deg);
+    opacity: 0.3;
 }
 
+
 body {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: hsl(185, 75%, 39%);
-    background-image: url('images/bg-pattern-top.svg');
-    background-size: cover;
 }
 
 .component {
     display: flex;
     flex-direction: column;
-    height: 40%;
+    min-height: 600px;
     width: 20%;
     background-color: #fff;
     border-radius: 5%;
     overflow: hidden;
     margin: 20px 0;
+    z-index: 999;
 }
 .info {
     display: flex;
@@ -97,22 +120,19 @@ body {
 }
 @media (max-width: 2000px) {
     .component {
-        height: 50%;
+        min-height: 450px;
         width: 25%;
     }
 }
 @media (max-width: 1200px) {
     .component {
-        height: 50%;
+        min-height: 450px;
         width: 50%;
     }
 }
 @media (max-width: 767px) {
-    body {
-        min-height: 70%;
-    }
     .component {
-        min-height: 70%;
+        min-height: 420px;
         width: 90%;
     }
 }
