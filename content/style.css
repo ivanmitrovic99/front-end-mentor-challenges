@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url('images/bg-desktop.png');
+    background-color: hsl(229, 57%, 11%);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.component {
+    width: 80%;
+    height: 25%;
+    display: flex;
+    gap: 30px;
+}
+.left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(228, 56%, 26%);
+    min-width: 300px;
+    height: 100%;
+    padding: 4%;
+    border-radius: 10px;
+    border-top-right-radius: 100px;
+}
+.logo {
+    margin-bottom: 20px;
+}
+.icons {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+.icon-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: hsl(229, 57%, 11%);
+}
+.icons img {
+    padding: 10px;
+}
+.right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(228, 56%, 26%);
+    width: 100%;
+    height: 70%;
+    padding: 4%;
+    border-radius: 10px;
+    align-self: flex-end;
+    color: hsl(243, 100%, 93%);
+}
+.full-bar {
+    width: 90%;
+    height: 15px;
+    border-radius: 20px;
+    background: hsl(229, 57%, 11%);
+    overflow: hidden;
+}
+.bar { 
+    position: relative;
+    height: 100%;
+    width: 80%;
+    border-radius: 20px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 100%);
+}
+.dot {
+    position: absolute;
+    right: 3px;
+    top: 2px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
