@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
 }
 html {
     height: 100%;
@@ -21,10 +20,12 @@ body {
     justify-content: center;
 }
 .component {
-    width: 80%;
-    height: 25%;
+    width: 40%;
+    height: 20%;
+    min-height: 200px;
     display: flex;
     gap: 30px;
+    margin-top: 20px;
 }
 .left-content {
     display: flex;
@@ -59,15 +60,21 @@ body {
 }
 .right-content {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     background-color: hsl(228, 56%, 26%);
     width: 100%;
+    min-width: 300px;
     height: 70%;
     padding: 4%;
     border-radius: 10px;
     align-self: flex-end;
     color: hsl(243, 100%, 93%);
+}
+.right-content p {
+    font-size: 0.8em;
+    margin-bottom: 10px;
 }
 .full-bar {
     width: 90%;
@@ -96,4 +103,104 @@ body {
     display: flex;
     justify-content: space-between;
     width: 90%;
+}
+.popup-holder {
+    position: absolute;
+    height: 60px;
+    width: 150px;
+    background-color: #fff;
+    top: -40px;
+    right: 40px;
+    color: hsl(229, 7%, 55%);
+    border-radius: 5px;
+}
+.popup {
+        position: relative;
+        background: #fff;
+        border-radius: .4em;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+}
+.popup::after {
+    content: '';
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-bottom-color: #fff;
+	border-top: 0;
+	margin-left: 48px;
+	margin-top: -20px;
+    transform: rotate(45deg);
+}
+.right-content .popup .bolder-text {
+    font-weight: 700;
+    font-size: 2em;
+    color: #000;
+}
+.lighter-text {
+    font-size: 0.6em;
+}
+.popup {
+    font-size: 1.2em;
+}
+.min, .max {
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+@media (max-width: 2000px) {
+    .component {
+        width: 50%;
+    }
+}
+@media (max-width: 1500px) {
+    .component {
+        width: 70%;
+    }
+}
+@media (max-width: 1000px) {
+    .component {
+        width: 90%;
+    }
+}
+@media (max-width: 767px) {
+    .component {
+        flex-direction: column;
+        height: auto;
+        width: 60%;
+        align-items: center;
+    }
+    .left-content {
+        min-height: 200px;
+        padding: 10%;
+    }
+    .right-content {
+        min-height: 150px;
+        align-self: center;
+    }
+    .popup::after {
+        border: none;
+    }
+    .popup-holder {
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: -140px;
+        margin: auto;
+    }
+    .bar-holder {
+        margin: 0 auto;
+        width: 80%;
+    }
+    .right-content p {
+        text-align: center;
+    }
+    .full-bar {
+        width: 100%;
+    }
 }
