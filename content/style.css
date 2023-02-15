@@ -41,9 +41,13 @@ body {
     border-radius: 30px;
     text-decoration: none;
 }
+
 .header .button {
     background-color: #fff;
     color: #000;
+}
+.header .button:hover {
+    color: rgba(0, 0, 0, 0.5);
 }
 .content {
     display: flex;
@@ -66,6 +70,9 @@ body {
 .content-left .button, .footer .button {
     background-color: hsl(322, 100%, 66%);
     color: #fff;
+}
+.content-left .button:hover, .footer .button:hover {
+    opacity: 0.5;
 }
 .card {
     width: 90%;
@@ -114,7 +121,7 @@ body {
 .footer-content {
     display: flex;
     color: #fff;
-    padding: 10% 4%;
+    padding: 6% 4%;
     align-items: center;
     justify-content: center;
 }
@@ -129,7 +136,7 @@ body {
 }
 .tabs {
     display: flex;
-    flex-basis: 50%;
+    flex-basis: 47%;
     flex-wrap: wrap;
     padding: 5%;
 }
@@ -139,7 +146,7 @@ body {
     width: 50%;
 }
 .socials {
-    flex-basis: 15%;
+    flex-basis: 18%;
 }
 .text {
     display: inline-block;
@@ -148,6 +155,11 @@ body {
     padding: 10px;
     border: 1px solid #fff;
     border-radius: 50%;
+}
+.socials i:hover {
+    color: hsl(322, 100%, 66%);
+    border-color: hsl(322, 100%, 66%);
+    cursor: pointer;
 }
 .socials i:first-child{
     padding: 10px 14px;
@@ -159,6 +171,7 @@ body {
     position: absolute; 
     bottom: 50px;
     right: 25px;
+    font-size: 0.7em;
     color: #fff;
 }
 .row {
@@ -168,4 +181,60 @@ body {
     height: 20px;
     margin-top: 3px;
 }
-
+@media (max-width: 1400px) {
+    .footer-box {
+        width: 50%;
+    }
+    .footer-content {
+        padding: 13% 1%;
+    }
+}
+@media (max-width: 767px) {
+    .cover-content h1 {
+        font-size: 1.5em;
+    }
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .content-left {
+        align-items: center;
+    }
+    .header a {
+        top: 30px;
+        right: 20px;
+    }
+    .header .button {
+        padding: 5px 15px;
+    }
+    .card {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .card.card-2 {
+        flex-direction: column;
+    }
+    .card-text {
+        align-items: center;
+    }
+    .footer-box {
+        width: 90%;
+    }
+    .footer-content {
+        flex-direction: column;
+        padding: 30% 2% 22%;
+        align-items: flex-start;
+    }
+    .socials {
+        align-self: center;
+    }
+    .tabs .tab {
+        width: 100%;
+    }
+    .copyright {
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+}
