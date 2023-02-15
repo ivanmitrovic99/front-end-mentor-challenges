@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    min-height: 100%;
+    width: 100%;
+}
+.navigation {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 70px;
+}
+.navigation .logo {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    max-width: 135px;
+}
+.logo img {
+    max-width: 100%;
+}
+.navigation .tabs {
+    position: absolute;
+    display: flex;
+    right: 0;
+    top: 20px;
+}
+.navigation .tabs .tab {
+    padding: 10px 20px;
+}
+.cover-content {
+    display: flex;
+    width: 90%;
+}
+.cover-left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 4%;
+}
+
+.cover-right img {
+    max-width: 100%;
+}
+.field {
+    width: 100%;
+}
+.button {
+    padding: 10px 40px;
+    background-color: hsl(224, 93%, 58%);
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    width: 40%;
+    font-family: 'Raleway', sans-serif;
+}
+input {
+    height: 38px;
+    padding: 10px;
+    width: 60%;
+}
+input::placeholder {
+    opacity: 0.5;
+}
+.section {
+    display: flex;
+    margin-top: 200px;
+    padding: 5% 5%;
+    background-image: url('images/bg-curve-desktop.svg');
+    background-size: cover;
+    background-color: hsl(240, 75%, 98%);
+}
+.section-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+.green-text {
+    color: hsl(170, 45%, 43%);
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+.card {
+    width: 50%;
+    min-width: 320px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 3px;
+    padding: 4%;
+}
+.card p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+.info {
+    display: flex;
+}
+.info img {
+    max-height: 30px;
+    border-radius: 50%;
+}
+.info .name {
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+.section-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-right img {
+    max-width: 90%;
+}
+.above-footer {
+    padding: 3% 0%;
+    display: flex;
+    background-color: hsl(238, 22%, 44%);
+    color: #fff;
+}
+.above-footer-left, .above-footer-right {
+    flex-basis: 50%;
+    padding: 5%;
+}
+.above-footer-left h1 {
+    margin-bottom: 15px;
+}
+.above-footer-right a {
+    display: block;
+    font-size: 0.8em;
+    padding: 10px 20px;
+}
+.above-footer-right input {
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
