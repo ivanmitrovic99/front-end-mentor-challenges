@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    min-height: 100%;
+}
+.cover-content {
+    min-height: 60vh;
+}
+.header {
+    position: relative;
+    min-height: 100px;
+}
+.logo-holder {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.logo-holder img {
+    max-width: 60%;
+}
+.header a {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+.button {
+    padding: 15px 40px;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.header .button {
+    background-color: #fff;
+    color: #000;
+}
+.header .button:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+.content-right {
+    padding: 5%;
+}
+.content-right img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+    gap: 20px;
+    margin: 0 auto;
+    width: 60%;
+}
+.header .button {
+    color: hsl(322, 100%, 66%);
+    border:1px solid hsl(322, 100%, 66%);
+}
+.content-left .button, .footer-box .button, .footer .button {
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+}
+.footer .button {
+    border-radius: 5px;
+}
+.footer-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    min-height: 500px;
+}
+.footer-box .button {
+    width: 30%;
+}
+.content-left .button:hover, .footer-box .button:hover {
+    opacity: 0.5;
+}
+.numbers-section {
+    display: flex;
+    text-align: center;
+}
+.numbers-left {
+    flex-basis: 50%;
+}
+.numbers-right {
+    flex-basis: 50%;
+}
+.number {
+    color: hsl(192, 100%, 9%);
+    font-size: 5em;
+    font-weight: 700;
+}
+.numbers-section img {
+    margin-right: 190px;
+}
+.numbers-section h2 {
+    opacity: 0.5;
+    font-weight: 400;
+}
+.card {
+    width: 90%;
+    display: flex;
+    flex-basis: 50%;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 3px;
+}
+.card-image img {
+    max-width: 100%;
+    padding: 3%;
+}
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 4%;
+}
+.card-text p {
+    width: 80%;
+}
+.footer {
+    position: relative;
+    background-color: hsl(192, 100%, 9%);
+}
+.footer-content {
+    display: flex;
+    color: #fff;
+    padding: 6% 4%;
+    align-items: center;
+    justify-content: center;
+}
+.left-row {
+    flex-basis: 50%;
+}
+.left-row > * {
+    margin: 15px;
+}
+.left-row img {
+    margin-right: 15px;
+}
+.right-row {
+    flex-basis: 50%;
+    
+}
+.socials {
+    margin: 0;
+    flex-basis: 18%;
+}
+.text {
+    display: inline-block;
+}
+.socials i:hover {
+    color: hsl(322, 100%, 66%);
+    border-color: hsl(322, 100%, 66%);
+    cursor: pointer;
+}
+.socials i:first-child{
+    padding: 10px 14px;
+}
+.socials i:last-child {
+    padding: 10px 12px;
+}
+.copyright {
+    position: absolute; 
+    bottom: 50px;
+    right: 25px;
+    font-size: 0.7em;
+    color: #fff;
+}
+.row {
+    display: flex;
+}
+.footer .left-row .row img {
+    height: 20px;
+    margin-top: 3px;
+}
+@media (max-width: 1400px) {
+    
+    .footer-content {
+        padding: 13% 1%;
+    }
+}
+@media (max-width: 767px) {
+    .cover-content h1 {
+        font-size: 1.5em;
+    }
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .content-left {
+        align-items: center;
+    }
+    .header a {
+        top: 30px;
+        right: 20px;
+    }
+    .header .button {
+        padding: 5px 15px;
+    }
+    .card {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .card.card-2 {
+        flex-direction: column;
+    }
+    .card-text {
+        align-items: center;
+    }
+    .footer-content {
+        flex-direction: column;
+        padding: 30% 2% 22%;
+        align-items: flex-start;
+    }
+    .socials {
+        align-self: center;
+    }
+    .tabs .tab {
+        width: 100%;
+    }
+    .copyright {
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+}
