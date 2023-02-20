@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(270, 20%, 96%);
+    overflow: hidden;
+}
+.background-pattern {
+    position: absolute;
+    height: 80%;
+    border-radius: 0 0 50% 50%;
+    width: 40%;
+    top: 0;
+    left: -185px;
+    background: linear-gradient(to top,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    z-index: 0;
+}
+/* .background-pattern-bottom {
+    position: absolute;
+    height: 80%;
+    border-radius: 50% 50% 0 0;
+    width: 40%;
+    bottom: 0;
+    right: -185px;
+    background: linear-gradient(to top,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    opacity: 0.05;
+    z-index: 0;
+} */
+.component {
+    display: flex;
+    width: 80%;
+    height: 70%;
+    margin: 50px 0;
+    gap: 20px;
+    z-index: 5;
+}
+.component-right {
+    flex-basis: 50%;
+}
+.component-left {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+}
+.phone {
+    height: 100%;
+    width: 300px;
+    background-color: #fff;
+    border: 15px solid #fff;
+    border-radius: 30px;
+}
+.phone-header {
+    display: flex;
+    position: relative;
+    background: linear-gradient(to right,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    align-items: center;
+    min-height: 75px;
+    gap: 10px;
+    padding: 0 10px;
+    border-radius: 25px 25px 10px 10px;
+}
+.phone-header .profile-info img {
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.back-button {
+    color: #fff;
+}
+.name {
+    display: inline-block;
+    color: #fff;
+    font-size: 0.9em;
+}
+.available {
+    opacity: 0.5;
+    font-size: 0.7em;
+}
+.dots {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    line-height: 0.3;
+    color: #fff;
+    margin-right: 15px;
+}
+.white-bar {
+    position: absolute;
+    width: 50%;
+    background-color: #fff;
+    height: 25px;
+    top: -8px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    border-radius: 20px;
+}
+.phone-screen {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 0 0 10px 10px;
+    padding: 10px 0;
+}
+.message {
+    font-size: 0.7em;
+    max-width: 60%;
+    height: auto;
+    margin: 5px 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.message-partner {
+    background-color: hsla(276, 55%, 52%, 0.1);
+    color: hsl(276, 55%, 52%);
+}
+.message-user {
+    background-color: #fff;
+    color: hsl(271, 15%, 43%);
+    align-self: flex-end;
+}
+.message-photos {
+    display: flex;
+    background: transparent;
+}
+.message-photos img {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.message.message-quote {
+    display: flex;
+    min-width: 70%;
+    background: linear-gradient(to right,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    color: #fff;
+    min-height: 35px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px 10px 10px 3px;
+}
+.circle {
+    background: transparent;
+    height: 15px;
+    width: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+}
+.price {
+    flex-grow: 1;
+    justify-self: flex-end;
+    text-align: right;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.walk-duration {
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+.input-box {
+    position: relative;
+    margin: 10px;
+    height: 40px;
+    width: 90%;
+    margin: 20px auto 10px;
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+}
+.input-box input::placeholder {
+    color: hsl(206, 6%, 79%);
+    font-size: 0.9em;
+}
+.button-submit {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: hsl(271, 36%, 24%);
+    font-size: 1.3em;
+    text-align: center;
+}
+.component-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.component-right h1 {
+    color: hsl(271, 36%, 24%);
+}
+.component-right p {
+    width: 80%;
+    color: hsl(270, 7%, 64%);
+}
+@media (max-width: 767px) {
+    .component {
+        flex-direction: column;
+    }
+    .component-right {
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    .component-right p{ 
+        width: 100%;
+    }
+}
