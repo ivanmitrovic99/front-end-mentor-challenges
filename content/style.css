@@ -17,7 +17,6 @@ body {
     align-items: center;
     justify-content: center;
     background-color: hsl(270, 20%, 96%);
-    overflow: hidden;
 }
 .background-pattern {
     position: absolute;
@@ -29,17 +28,6 @@ body {
     background: linear-gradient(to top,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
     z-index: 0;
 }
-/* .background-pattern-bottom {
-    position: absolute;
-    height: 80%;
-    border-radius: 50% 50% 0 0;
-    width: 40%;
-    bottom: 0;
-    right: -185px;
-    background: linear-gradient(to top,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
-    opacity: 0.05;
-    z-index: 0;
-} */
 .component {
     display: flex;
     width: 80%;
@@ -218,6 +206,9 @@ body {
     color: hsl(270, 7%, 64%);
 }
 @media (max-width: 767px) {
+    .background-pattern {
+        width: 90%;
+    }
     .component {
         flex-direction: column;
     }
