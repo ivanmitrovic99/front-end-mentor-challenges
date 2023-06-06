@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  font-family: "Overpass", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  background: linear-gradient(to bottom, hsl(214, 18%, 18%), hsl(213, 17%, 12%));
+  padding: 3%;
+  max-width: 20%;
+  min-height: 30%;
+  border-radius: 30px;
+}
+.item h1 {
+  color: #fff;
+}
+.rating-state {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+}
+.item p {
+  color: hsl(217, 12%, 63%);
+}
+.submitted-state {
+  display: none;
+}
+.star img {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #242e38;
+}
+.ratings {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 25px;
+}
+.ratings .rating-btn {
+  padding: 10px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: #242e38;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.1em;
+}
+.submit-btn {
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+.rating-btn:hover {
+  background-color: hsl(216, 12%, 54%);
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+}
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: hsl(25, 97%, 53%);
+}
+.submitted-state {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+}
+.submitted-state img {
+  max-width: 150px;
+}
+.submitted-msg {
+  background-color: #242e38;
+  color: hsl(25, 97%, 53%);
+  opacity: 0.7;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.ratings .rating-active {
+  background-color: hsl(25, 97%, 53%);
+  color: rgba(255, 255, 255, 1);
+}
+.warning-msg {
+  display: none;
+  text-align: center;
+  justify-content: center;
+}
+.--active {
+  display: flex;
+}
+@media (max-width: 1700px) {
+  .item {
+    max-width: 30%;
+    min-height: 30%;
+  }
+}
+@media (max-width: 1024px) {
+  .item {
+    min-height: 30%;
+    max-width: 45%;
+  }
+}
+@media (max-width: 767px) {
+  .item {
+    max-width: 90%;
+    padding: 7%;
+  }
+  .ratings {
+    gap: 10px;
+  }
+  .submitted-state {
+    gap: 20px;
+  }
+}
