@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+.item {
+  display: flex;
+  width: 70%;
+  background-color: #fff;
+  height: auto;
+  border-radius: 20px;
+}
+.item-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-image: url("images/bg-pattern-desktop.svg");
+  background-size: cover;
+  background-position-x: 100%;
+  background-repeat: no-repeat;
+}
+.images-holder {
+  position: relative;
+  width: 400px;
+}
+.item-right {
+  padding: 5%;
+  flex: 1;
+}
+.item-right h1 {
+  margin-bottom: 30px;
+}
+.item-left img {
+  margin-left: -50px;
+  max-width: 100%;
+}
+.box-img {
+  position: absolute;
+  z-index: 99;
+  top: 120px;
+  left: 0;
+}
+.item-left img.box-img {
+  width: 100px;
+}
+.faq-answer {
+  display: none;
+}
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1em;
+  padding: 10px 0;
+  color: hsl(238, 29%, 16%);
+}
+.faq-question:hover {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+.faq-question img {
+  width: 10px;
+  height: 10px;
+}
+.faq-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.faq-item {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+.faq-answer {
+  font-size: 0.8em;
+  padding: 10px 0;
+  color: hsl(237, 12%, 33%);
+}
+.--active {
+  display: block;
+}
+.--bold {
+  font-weight: bold;
+}
+.--rotate {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+@media (max-width: 991px) {
+  html,
+  body {
+    height: auto;
+    min-height: 100%;
+  }
+  .item {
+    margin: 120px 0;
+    width: 85%;
+  }
+  .images-holder {
+    width: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .item {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .item-left {
+    background-image: url("images/bg-pattern-mobile.svg");
+    background-size: 300px;
+    background-position-x: 50%;
+  }
+  .item-left img {
+    margin-left: 0;
+    margin-top: -105px;
+    padding-bottom: 50px;
+    width: 80%;
+  }
+  .item-right h1 {
+    text-align: center;
+  }
+  .box-img {
+    width: 80px;
+    top: 75px;
+    left: 25px;
+  }
+  .images-holder {
+    text-align: center;
+  }
+}
