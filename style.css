@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+.cover-content {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("images/bg-pattern-desktop.svg");
+  flex: 3;
+  padding: 6% 10%;
+  gap: 0.5em;
+}
+.content-right {
+  flex: 2;
+  background-image: url("images/hero-desktop.jpg");
+  background-size: cover;
+}
+.content-left h1 {
+  text-transform: uppercase;
+  font-size: 3.5em;
+  letter-spacing: 7px;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+.content-left .pink-text {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+.content-left p {
+  color: hsl(0, 36%, 70%);
+  margin-bottom: 1em;
+}
+.logo-desktop {
+  margin-bottom: 5em;
+}
+input {
+  width: 70%;
+  padding: 20px;
+  border-radius: 30px;
+  border: 1px solid hsl(0, 80%, 86%);
+  color: #000;
+}
+input:focus,
+input:focus-visible {
+  border-color: red;
+  outline-color: red;
+}
+.input-field {
+  position: relative;
+}
+.arrow-icon {
+  background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  height: 100%;
+  width: 80px;
+  padding: 20px 33px;
+  border-radius: 25px;
+  position: absolute;
+  right: 30%;
+}
+.arrow-icon:hover,
+.arrow-icon:focus {
+  cursor: pointer;
+  background: hsl(0, 80%, 86%);
+}
+.logo-mobile {
+  display: none;
+}
+.error-message {
+  color: hsl(0, 80%, 86%);
+  padding: 10px;
+  display: none;
+}
+.error-message.--active {
+  display: block;
+}
+@media (max-width: 991px) {
+  .logo-mobile {
+    display: block;
+    padding: 20px;
+  }
+  .logo-mobile img {
+    height: 25px;
+  }
+  .logo-desktop {
+    display: none;
+  }
+  .cover-content {
+    flex-direction: column-reverse;
+  }
+  .content-right {
+    min-height: 300px;
+    background-image: url("images/hero-mobile.jpg");
+    background-size: cover;
+  }
+  .content-left h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+  .content-left p {
+    text-align: center;
+  }
+  input {
+    width: 100%;
+  }
+  .arrow-icon {
+    right: 0;
+  }
+}
