@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  padding: 5% 10%;
+  margin: 0 auto;
+  gap: 20px;
+}
+.content img.logo {
+  width: 50px;
+}
+.content img.dashboard {
+  width: 90%;
+}
+.content h1 {
+  color: hsl(0, 0%, 59%);
+}
+.content h1 span {
+  color: #000;
+  font-weight: 600;
+}
+.content h2 {
+  font-size: 0.9em;
+  font-weight: 400;
+}
+.input-holder {
+  display: flex;
+  width: 100%;
+}
+.input-field {
+  width: 70%;
+  margin: 5px;
+}
+input {
+  padding: 10px 15px;
+  border-radius: 25px;
+  color: hsl(0, 0%, 59%);
+  border-color: hsl(0, 0%, 59%);
+  opacity: 0.5;
+  width: 100%;
+}
+.submit-button {
+  padding: 13px;
+  text-align: center;
+  width: 20%;
+  font-size: 0.8em;
+  align-self: flex-start;
+  margin: 5px;
+  background-color: hsl(223, 87%, 63%);
+  border-radius: 20px;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0) 0px 3px 12px -3px;
+}
+.submit-button:hover,
+.submit-button:focus {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.error-message {
+  font-size: 0.7em;
+  margin: 5px 30px;
+  color: hsl(354, 100%, 66%);
+  display: none;
+}
+.error-message.--active {
+  display: block;
+}
+input.--active {
+  color: hsl(354, 100%, 66%);
+  border-color: hsl(354, 100%, 66%);
+}
+.socials i {
+  color: hsl(223, 87%, 63%);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 15px;
+}
+.socials i.fa-facebook-f {
+  padding: 5px 8px;
+}
+.socials i:hover,
+.socials i:focus {
+  background-color: hsl(223, 87%, 63%);
+  color: #fff;
+  cursor: pointer;
+}
+.bottom-text {
+  color: hsl(0, 0%, 59%);
+  font-size: 0.6em;
+  margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+  .content {
+    width: 100%;
+    padding: 13% 10%;
+  }
+  .content h1 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .input-holder {
+    flex-direction: column;
+  }
+  .input-field {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+  }
+  .error-message {
+    text-align: center;
+  }
+}
