@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 86%);
+  min-height: 100%;
+}
+.item {
+  background-color: hsl(0, 0%, 100%);
+  width: 70%;
+  padding: 2%;
+  border-radius: 20px;
+  border-bottom-right-radius: 30%;
+}
+.item .inputs-holder {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+.input-label {
+  font-size: 0.7em;
+  color: hsl(0, 1%, 44%);
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.item .inputs-holder input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.3em;
+  color: hsl(0, 0%, 8%);
+  font-weight: bold;
+}
+.item .inputs-holder input::placeholder {
+  color: hsl(0, 1%, 44%);
+}
+.mid-section {
+  position: relative;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mid-section hr {
+  opacity: 0.4;
+}
+.mid-section img {
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  padding: 10px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+}
+.mid-section img:hover,
+.mid-section img:focus {
+  background-color: hsl(0, 0%, 8%);
+  cursor: pointer;
+}
+.results .result {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.results .result .result-value {
+  color: hsl(259, 100%, 65%);
+  font-size: 5em;
+  font-weight: bold;
+  font-style: italic;
+}
+.results .result .result-label {
+  font-size: 4.5em;
+  font-weight: bold;
+  font-style: italic;
+}
+.error-msg {
+  font-size: 0.6em;
+  margin: 5px;
+  color: hsl(0, 100%, 67%);
+  display: none;
+}
+.error-msg.--active {
+  display: block;
+}
+input.--active {
+  border-color: hsl(0, 100%, 67%);
+}
+.input-label.--active {
+  color: hsl(0, 100%, 67%);
+}
+@media (max-width: 767px) {
+  .item {
+    width: 90%;
+  }
+  .results .result .result-label {
+    font-size: 2.5em;
+  }
+  .results .result .result-value {
+    font-size: 3em;
+  }
+  .item .inputs-holder input {
+    width: 90%;
+  }
+  .item .mid-section img {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .results {
+    padding: 0 40px;
+  }
+}
